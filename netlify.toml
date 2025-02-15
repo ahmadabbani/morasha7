@@ -2,6 +2,7 @@
   command = "npm run build"
   publish = "dist"          # Vite's default build folder (NOT client/dist)
   functions = "functions"   # Serverless functions directory
+   edge_functions = false
 
 [dev]
  framework = "vite"
