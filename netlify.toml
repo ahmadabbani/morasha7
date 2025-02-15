@@ -1,0 +1,19 @@
+[build]
+  command = "npm run build"
+  publish = "dist"          # Vite's default build folder (NOT client/dist)
+  functions = "functions"   # Serverless functions directory
+
+[dev]
+ framework = "vite"
+ 
+command = "npm run dev"
+autoLaunch = false
+
+  [functions]
+  node_bundler = "esbuild"
+external_node_modules = ["pg"]
+  directory = "netlify/functions"
+  
+[experimental]
+  edge_functions = false
+
